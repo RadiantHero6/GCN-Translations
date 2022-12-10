@@ -4,6 +4,12 @@ endian msb // Used To Encode SHIFT-JIS Words
 output "../../output/Lupin Disc 1 [U].iso", create
 origin $000000; insert "../../isos/Lupin Disc 1 [J].iso" // Include Japanese Lupin The Third - Umi Ni Kieta Hihou GameCube ISO Disc 1
 
+macro Text(OFFSET, TEXT) {
+  map 0, 0, 256
+  origin {OFFSET}
+  db {TEXT}
+}
+
 macro TextSave(OFFSET, TEXT) {
   origin {OFFSET}
   db {TEXT} // ASCII Text To Print
