@@ -33,6 +33,6 @@ Text($3, "E")
 
 include "Banner.asm"
 include "Credits.asm"
-incude "Menus.asm"
+include "Menus.asm"
 include "Intro.asm"
 include "Dialogue.asm"
